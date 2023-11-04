@@ -1,4 +1,4 @@
-style.css :root {
+:root {
   --primary: blue;
   --shadow: -5px 5px 10px 5px grey;
 }
@@ -92,7 +92,7 @@ header ul li:hover {
   /* background-color: red;
   background-image: url(./img/hero.jpg);
   background-size: cover; */
-  background: red url("bg.webp") no-repeat center;
+  background: red url(./img/hero.jpg) no-repeat center;
   background-size: cover;
 
   display: flex;
@@ -227,3 +227,95 @@ article .title {
   border: 1px solid grey;
   padding: 5px 10px;
 }
+
+/* media q */
+
+/* 600 - 900px for iPad */
+/* 600px - mobile screens */
+
+@media (max-width: 760px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articles {
+    width: 100%;
+  }
+
+  .side-links {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .country,
+  .date {
+    width: 100%;
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 760px) {
+  article {
+    flex-direction: column;
+  }
+
+  .art-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .side-links {
+    /* display: flex; */
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    margin: 10px 0;
+  }
+  .subs {
+    align-items: normal;
+}
+
+@media (max-width: 760px) {
+  /* hide global message */
+}
+
+/* @media (max-width: 600px) {
+  .global {
+    background: green;
+  }
+} */
+
+/* Large display or TV 992px*/
+/* @media (min-width: 992px) {
+  header {
+    background: pink;
+    color: black;
+  }
+} */
+
+/* @media (width > 992) {
+  header {
+    background: yellow;
+    color: black;
+  }
+} */
+
+/* @media (600px < width < 992px) {
+  header {
+    background: yellow;
+    color: black;
+  }
+} */
